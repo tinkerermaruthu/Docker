@@ -1,0 +1,19 @@
+Create  sudo docker build -t yourenginename (myappache) .
+Run     sudo docker run -p 80:80 --name=App2 mynginx 
+sudo docker commit 74610235cc67 tinkerermaruthu/mynginx
+sudo docker push tinkerermaruthu/mynginx
+
+sudo docker run -it ubuntu    
+sudo docker ps          {active machines}
+sudo docker ps -a       {exited machines}
+sudo docker rm container-id
+
+sudo docker images
+sudo docker rmi image
+
+sudo docker stop container id
+sudo docker push tinkerermaruthu/myapache
+
+
+
+

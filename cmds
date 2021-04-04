@@ -1,0 +1,54 @@
+docker --version
+docker --help  
+docker pull    docker pull ubuntu
+docker run     docker run -it ubuntu or docker run hello-world
+docker images
+docker build -t myubuntuimage .
+docker run -it conrainerid bash 
+
+it= interactive mode tty
+
+
+
+Containers cmds
+
+docker container logs
+docker container kill
+docker container rm
+docker rmi imagename
+docker container run
+docker container start
+
+docker export --output="latest.tar mycontainername"   {docker image in our system into a tar file to save}
+docker im
+docker import /home/maruthu/Desktop/demo.tgz
+
+docker commit (new image copy local repo)
+sudo docker commit 8f0b0ffaea20 tinkerermaruthu/demonode
+
+docker login
+sudo docker commit 8f0b0ffaea20 tinkerermaruthu/demonode
+docker push tinkerermaruthu/demonode
+
+
+rename
+docker tag mycustomubuntu tinkerermaruthu/mycustomubuntu
+
+
+docker ps [process]
+docker ps -a  
+docker stop containerid  [shutdown any container]
+docker kill
+docker rm [containerid]
+docker rmi myubuntuimage  [imagename]
+
+
+
+docker compose build
+docker compose-up
+
+This command is executed in the directory where YAML file is present for building the compose
+used to two multi-container app where various services will be hosted different containers
+
+
+
